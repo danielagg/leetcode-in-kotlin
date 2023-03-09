@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6bd97aa7-3fa9-47a3-9834-f4458c2ea057" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/arrays_and_hashing/ArraysAndHashing.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/arrays_and_hashing/ArraysAndHashing.kt" afterDir="false" />
-    </list>
+    <list default="true" id="6bd97aa7-3fa9-47a3-9834-f4458c2ea057" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
