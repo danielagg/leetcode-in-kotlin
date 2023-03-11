@@ -4,6 +4,7 @@ class ArraysAndHashing {
     fun executeAll() {
         containsDuplicate(intArrayOf(1,2,3,1))
         isAnagram("anagram", "nagaram")
+        groupAnagrams(arrayOf("eat", "tea", "tan", "ate", "nat", "bat"))
     }
 
     fun containsDuplicate(nums: IntArray): Boolean {
@@ -56,6 +57,18 @@ class ArraysAndHashing {
             prevMap[num] = i
         }
         return intArrayOf()
+    }
 
+
+    fun groupAnagrams(strs: Array<String>): List<List<String>> {
+        val resultGroups = HashMap<String, MutableList<String>>()
+        for (word in strs) {
+            val charactersInWordSorted = word.toCharArray().sorted().joinToString("")
+            if (!resultGroups.containsKey(charactersInWordSorted)) {
+                resultGroups[charactersInWordSorted] = mutableListOf()
+            }
+            resultGroups[charactersInWordSorted]!!.add(word)
+        }
+        return resultGroups.values.toList()
     }
 }
