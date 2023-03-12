@@ -6,7 +6,9 @@ class BinarySearch {
         var left = 0
         var right = nums.size - 1
         while (left <= right) {
-            val mid = left + (right - left) / 2
+            val mid = left + ((right - left) / 2) // to avoid overflow --> 10 + ((20 - 10) / 2) = 15
+            val mid2 = (left + right) / 2 // this is prone to overflow --> (10 + 20) / 2 = 15
+
             if (nums[mid] == target) {
                 return mid
             } else if (nums[mid] < target) {
